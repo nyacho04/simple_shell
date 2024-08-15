@@ -18,11 +18,46 @@ char **str_split(char *str)
 	while (token != NULL)
 	{
 	array = realloc(array, (count + 1) * sizeof(char *));
-	array[count] = token;
+	if (array == NULL)
+	{
+	perror("realloc");
+	exit(EXIT_FAILURE);
+	}
+	array[count] = strdup(token);
+	if (array[count] == NULL)
+	{
+	perror("strdup");
+	exit(EXIT_FAILURE);
+	}
 	count++;
 	token = strtok(NULL, " ");
 	}
-	array = realloc(array, (count + 1) *sizeof(char *));
-	array[count] = NULL;
-}
 
+	array = realloc(array, (count + 1) * sizeof(char *));
+	if (array == NULL)
+	{
+		perror("realloc");
+		exit(EXIT_FAILURE);
+	}
+	array[count] = NULL;
+
+	return (array);
+}
+/**
+ * main - example
+ *
+ * Return: Always 0.
+ */
+int main()
+{
+	char str[] = "mi debilidad es el conjunto de la psg";
+	char **array = str_split(str);
+
+	for (int n = 0; array[n] != NULL; n++)
+	{
+		printf("%s\n", array[n]);
+		free(array[n]);
+	}
+	free(array);
+	return (0);
+}
