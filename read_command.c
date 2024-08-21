@@ -14,6 +14,7 @@ char *read_command(void)
 		free(command);
 		exit(EXIT_SUCCESS);
 	}
+
 	return(command);
 
 }
