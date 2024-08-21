@@ -2,7 +2,8 @@
 # Simple shell: The nashell
 # What is a Shell?
 A shell is a user interface that allows you to interact with the operating system of a computer. It acts as a command-line interpreter, enabling users to execute commands, run programs, and manage files. Shells can be graphical, like the interfaces you see on Windows or macOS, or text-based, where you type commands into a terminal window.
-This is a custom implementation of a "simple shell" in C, The project includes a set of functions
+
+- This is a custom implementation of a "simple shell" in C, The project includes a set of functions
 ## 📁 Files
  `shell.h`: Header file containing function prototypes and necessary includes.
  
