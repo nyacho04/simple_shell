@@ -8,9 +8,15 @@ int main (void)
 	{
 		display_prompt();
 		command = read_command();
-		free(command);
-	}
 	
-	return(EXIT_SUCCESS);
+	if (strcmp(command, "exit\n") == 0)
+	{
+		free(command);
+		break;
+	}
+	execute_command(command);
 	free(command);
+	}
+	return(EXIT_SUCCESS);
+
 }

@@ -14,4 +14,5 @@
 char *read_command();
 void display_prompt(void);
 int shell_error(void);
+void execute_command(char *command);
 #endif
