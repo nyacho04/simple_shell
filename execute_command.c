@@ -26,9 +26,7 @@ void execute_command(char *command)
 	}
 	else if (pid == 0)
 	{
-		extern char **environ;
-
-		if (execve(command, args, environ) == -1)
+		if (execve(command, args, NULL) == -1)
 		{
 			perror("command execute failed");
 			exit(EXIT_FAILURE);

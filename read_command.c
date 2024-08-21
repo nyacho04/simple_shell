@@ -1,5 +1,9 @@
 #include "shell.h"
-
+/**
+ * read_command - jsjsjsjsjs
+ *
+ * Return: void
+ */
 char *read_command(void)
 {
 	char *command = NULL;
