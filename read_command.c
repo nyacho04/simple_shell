@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * read_command - jsjsjsjsjs
+ * read_command - it reads it reads the commandd
  *
  * Return: void
  */
@@ -15,6 +15,6 @@ char *read_command(void)
 		exit(EXIT_SUCCESS);
 	}
 
-	return(command);
+	return (command);
 
 }

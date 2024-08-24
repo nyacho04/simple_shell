@@ -15,4 +15,6 @@ char *read_command();
 void display_prompt(void);
 int shell_error(void);
 void execute_command(char *command);
+char *find_command_in_path(char *command);
+
 #endif
