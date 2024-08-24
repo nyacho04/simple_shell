@@ -18,11 +18,14 @@ A shell is a user interface that allows you to interact with the operating syste
 
 `find_command_in_path.c`: This function scans each directory listed in the PATH environment variable to locate an executable file that matches the provided command. It returns the full path to the executable if found or NULL if the command is not present in any of the directories.
 
-## Compilation
+## Compilation and running
 ```c
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
-## Usage Examples
+```c
+./hsh
+```
+# Usage
 ```c
 nashell$ ls
 AUTHORS  README.md  display_prompt.c  execute_command.c  find_command_in_path.c  hsh  nashell.c  read_command.c  shell.h  super_simple_shell
@@ -35,9 +38,22 @@ nashell$ pwd
 nashell$ cat AUTHORS
 # The function of this file is lists all individuals having contributed content to the repository.
 ```
-# Exit Example
+```c
+nashell$ clear
+nashell$
+```
+## 💢 Exit
 ```c
 nashell$ exit
 root@57cd55addaed46ec9bc834085ecadec2-2377118072:/holbertonschool-simple_shell#
 ```
 - Also you can press "ctrl+D" and it close right
+## 📛 Error Examples
+```c
+nashell$ hola esto es un error
+command not found: hola esto es un error
+```
+```c
+nashell$ /bin
+command execute failed: Permission denied
+```
