@@ -51,13 +51,13 @@ AWS_DEFAULT_REGION=sa-east-1
 AWS_REGION=sa-east-1
 PWD=/holbertonschool-simple_shell
 ```
-## 💢 Exit
+## Exit
 ```c
 nashell$ exit
 root@57cd55addaed46ec9bc834085ecadec2-2377118072:/holbertonschool-simple_shell#
 ```
 - Also you can press "ctrl+D" and it close right
-## 📛 Error Examples
+## Error Examples
 ```c
 nashell$ hola esto es un error
 command not found: hola esto es un error
