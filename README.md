@@ -42,6 +42,14 @@ nashell$ cat AUTHORS
 nashell$ clear
 nashell$
 ```
+```c
+nashell$ env
+AWS_EXECUTION_ENV=AWS_ECS_FARGATE
+AWS_CONTAINER_CREDENTIALS_RELATIVE_URI=/v2/credentials/a086bdf5-5c1a-4d9b-a6fa-c3383ff60712
+HOSTNAME=57cd55addaed46ec9bc834085ecadec2-2377118072
+AWS_DEFAULT_REGION=sa-east-1
+AWS_REGION=sa-east-1
+```
 ## 💢 Exit
 ```c
 nashell$ exit
